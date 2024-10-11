@@ -23,7 +23,7 @@ for dirpath, _, filenames in os.walk(root_directory):
 
 # Now, text_files contains the paths of all .txt files
 
-OPEN_IA_KEY = "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"
+OPEN_IA_KEY = "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"
 client = OpenAI(api_key=OPEN_IA_KEY)
 
 
