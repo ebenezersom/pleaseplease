@@ -209,7 +209,7 @@ def combined_text_processing_single_call(text_for_author_title, text_for_feature
     results=[]
     for chunk in text_for_features:
         response = client.chat.completions.create(
-            model="gpt-4o-mini-2024-07-18-2024-07-18",
+            model="gpt-4o",
            # temperature=0.3,
             messages=[
                 {"role": "system", "content": """You are a helpful text categorization assistant. Your task is to analyze the provided extracts from a book and generate two separate JSON objects. Ensure that the returned JSON objects contain only values in the format: {feature : [list of variants]}, with no nested objects.
